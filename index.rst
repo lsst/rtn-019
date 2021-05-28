@@ -51,9 +51,9 @@ None of the data publication services (API service) are in use at the telescope 
 The services exercised heavily are:
 
 - The notebook aspect (https://github.com/lsst-sqre/nublado2)
-- The portal aspect and the related Firefly JupyterLab plugin
-- The umbrella app/landing page (https://github.com/lsst-sqre/squareone)
-- Infrastructure services underpinning the platform, such as (but not limited to):
+- The portal aspect (without interface to local RSP API services) and the related Firefly JupyterLab plugin
+- The umbrella app/landing page (https://github.com/lsst-sqre/charts/tree/master/charts/squareone)
+- The SQuaRE infrastructure service layer underpinning the platform, such as (but not limited to):
     - deployment configuration (https://github.com/lsst-sqre/phalanx)
     - authentication and authorisation (https://github.com/lsst-sqre/gafaelfawr)
     - certificate management
@@ -134,6 +134,13 @@ Telescope & Site Build/Release
 -------------------------------
 
 This service consumes containers built by Telescope & Site (in Operations, Observatory Operations) and SQuaRE collaborates with the Telescope & Site release co-ordinator and scientist on adding the JupyterLab layer on top of those containers for the notebook service (nublado). We occasionally meet to resolve issues across (or about) our interface, eg https://confluence.lsstcorp.org/display/DM/2021-04-14+Build+Workshop
+
+Telescope IT
+-------------
+
+This service consumes containers (specifically multus init containers) provided through Telescope IT for supporting multicast networking for our notebook pods.
+
+Like all of SQuaRE's summit services, RSP at the summit and base relies completely on Kubernetes infrastructure and network supported by Telescope (Chile) IT.
 
 Visual Identity
 ---------------
