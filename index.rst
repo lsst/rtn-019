@@ -52,7 +52,7 @@ The services exercised heavily are:
 
 - The notebook aspect (https://github.com/lsst-sqre/nublado2)
 - The portal aspect and the related Firefly JupyterLab plugin
-- The umbrella app/landing page (https://github.com/lsst-sqre/charts/tree/master/charts/squareone)
+- The umbrella app/landing page (https://github.com/lsst-sqre/squareone)
 - Infrastructure services underpinning the platform, such as (but not limited to):
     - deployment configuration (https://github.com/lsst-sqre/phalanx)
     - authentication and authorisation (https://github.com/lsst-sqre/gafaelfawr)
