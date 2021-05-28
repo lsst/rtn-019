@@ -1,41 +1,6 @@
 ..
   Technote content.
 
-  See https://developer.lsst.io/restructuredtext/style.html
-  for a guide to reStructuredText writing.
-
-  Do not put the title, authors or other metadata in this document;
-  those are automatically added.
-
-  Use the following syntax for sections:
-
-  Sections
-  ========
-
-  and
-
-  Subsections
-  -----------
-
-  and
-
-  Subsubsections
-  ^^^^^^^^^^^^^^
-
-  To add images, add the image file (png, svg or jpeg preferred) to the
-  _static/ directory. The reST syntax for adding the image is
-
-  .. figure:: /_static/filename.ext
-     :name: fig-label
-
-     Caption text.
-
-   Run: ``make html`` and ``open _build/html/index.html`` to preview your work.
-   See the README at https://github.com/lsst-sqre/lsst-technote-bootstrap or
-   this repo's README for more info.
-
-   Feel free to delete this instructional comment.
-
 :tocdepth: 1
 
 .. Please do not modify tocdepth; will be fixed when a new Sphinx theme is shipped.
@@ -46,12 +11,72 @@
 
 .. note::
 
-   **This technote is not yet published.**
+   **This is a SQuaRE delivery note covering use of the Science Platform in Observatory Operations (not the Data Facilities).**
 
-   This is a SQuaRE delivery note covering use of the science platform for Observatory Operations (telescope deployments). 
+   A Delivery Note is being used to transition a service (or other codebase) from Rubin Construction to Operations in situations where the service is not covered by a requirements document, is not part of the observatory operational readiness milestone, or otherwise lacks a formal process of delivery.
+
+   Its purpose is to document the transition so as to allow Ops-funded developers to continue to maintain and evolve the service, and to allow the service's deployment costs to be covered by Ops infrastructure or funding. It can also be used to describe responsibilities for the service when not a direct continuation of the model used in construction.
+
+   The process is complete when the relevant AD(s) and/or Director reviews the note and the note is published (merged to master).
+
+   **Engineering review: Michael Reuter**
+   **Management review:** Wil O'Mullane, Chuck Claver and Bob Blum
 
 .. Add content here.
+
+Scope
+=====
+
+
+Artifacts (code, docs, infrastructure) involved in this delivery
+----------------------------------------------------------------
+
+
+Potential costs
+---------------
+
+
+Ongoing support
+---------------
+
+
+
+Handover
+========
+
+Delivering team
+----------------
+
+
+
+Receiving Operations team
+--------------------------
+
+
+
+Authorization or asset transfer
+-------------------------------
+
+
+Known Issues
+============
+
+
+Additional Notes
+================
+
+DNS
+---
+
+
+Visual Identity
+---------------
+
+
+
 .. Do not include the document title (it's automatically added from metadata.yaml).
+
+
 
 .. .. rubric:: References
 
