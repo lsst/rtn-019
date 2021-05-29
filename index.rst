@@ -19,9 +19,9 @@
 
    The process is complete when the relevant AD(s) and/or Director reviews the note and the note is published (merged to master).
 
-   **Engineering review:** Michael Reuter
+   * **Engineering review:** Michael Reuter
 
-   **Management review:** Wil O'Mullane, Chuck Claver and Bob Blum
+   * **Management review:** Wil O'Mullane, Chuck Claver and Bob Blum
 
 .. Add content here.
 
@@ -50,14 +50,14 @@ No new requirements or usecases have been placed on the feature list as a result
 None of the data publication services (API service) are in use at the telescope deployments.
 The services exercised heavily are:
 
-- The notebook aspect (https://github.com/lsst-sqre/nublado2)
+- The notebook aspect (`lsst-sqre/nublado2 <https://github.com/lsst-sqre/nublado2>`_)
 - The portal aspect (without interface to local RSP API services) and the related Firefly JupyterLab plugin
-- The umbrella app/landing page (https://github.com/lsst-sqre/charts/tree/master/charts/squareone)
+- The umbrella app/landing page (`lsst-sqre/squareone <https://github.com/lsst-sqre/squareone>`_)
 - The SQuaRE infrastructure service layer underpinning the platform, such as (but not limited to):
-    - deployment configuration (https://github.com/lsst-sqre/phalanx)
-    - authentication and authorisation (https://github.com/lsst-sqre/gafaelfawr)
+    - deployment configuration (`lsst-sqre/phalanx <https://github.com/lsst-sqre/phalanx>`_)
+    - authentication and authorisation  `lsst-sqre/gafaelfawr <https://github.com/lsst-sqre/gafaelfawr>`_
     - certificate management
-    - ingres
+    - ingress
     - deployment infrastructure
 
 There are two significant differences between the "stock" Science Platform science deployments and the telescope deployments:
@@ -68,12 +68,13 @@ There are two significant differences between the "stock" Science Platform scien
 
 Site specific configurations for the telescope deployments of the science platform can be found here:
 
-- https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-summit.yaml
-- https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-base.yaml
-- https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-nts.yaml
-- https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-tucson-teststand.yaml
+- `Summit <https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-summit.yaml>`_
+- `Base <https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-base.yaml>`_
+- `NCSA teststand <https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-nts.yaml>`_
+- `Tucson teststand <https://github.com/lsst-sqre/phalanx/blob/master/science-platform/values-tucson-teststand.yaml>`_
 
-Deployment and configuration documentation is at https://phalanx.lsst.io
+
+Deployment and configuration documentation is at `phalanx.lsst.io <https://phalanx.lsst.io>`_.
 
 Potential costs
 ---------------
@@ -112,7 +113,9 @@ None required.
 Known Issues
 ============
 
-There are no current issues affecting service.
+There are no current issues affecting the quality of the service.
+
+There are occasionally tickets asking for improvements or a better user experience that are specific to the telescope usage of the service (see `[DM-30151] <https://jira.lsstcorp.org/browse/DM-30151>`_ for an example) and recognizing the importance of the service in summit operations we make a concerted attempt to prioritise them in Construction and will continue to do so in Operations.
 
 Additional Notes
 ================
@@ -123,8 +126,9 @@ Authentication
 There are two currently implemented ways of authenticating (establishing user identity) to the Science Platform, as supported by the A&A service (gafaelfawr).
 
 These are:
+
 - CILogon, in this case tied to the NCSA identity LDAP
-- Github tied to specific teams, in this case https://github.com/orgs/rubin-summit/teams/rsp-access among others.
+- Github tied to specific teams, in this case `rubin-summit/teams/rsp-access <https://github.com/orgs/rubin-summit/teams/rsp-access>`_ among others.
 
 Our summit IT team is planning on providing us with an OAuth2 service backed the FreeIPA identity service.
 When this is available, work will be needed to interface to that service, which will allow us to operate the summit instance in the absence of external network.
@@ -133,7 +137,7 @@ This work can be better prioritised as part of Operations, since it is not part 
 Telescope & Site Build/Release
 -------------------------------
 
-This service consumes containers built by Telescope & Site (in Operations, Observatory Operations) and SQuaRE collaborates with the Telescope & Site release co-ordinator and scientist on adding the JupyterLab layer on top of those containers for the notebook service (nublado). We occasionally meet to resolve issues across (or about) our interface, eg https://confluence.lsstcorp.org/display/DM/2021-04-14+Build+Workshop
+This service consumes containers built by Telescope & Site (in Operations, Observatory Operations) and SQuaRE collaborates with the Telescope & Site release co-ordinator and scientist on adding the JupyterLab layer on top of those containers for the notebook service (nublado). We occasionally meet to resolve issues across (or about) our interface, eg our recent `Build Workshop <https://confluence.lsstcorp.org/display/DM/2021-04-14+Build+Workshop>`_
 
 Telescope IT
 -------------
