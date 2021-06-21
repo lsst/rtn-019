@@ -28,7 +28,7 @@
 Scope
 =====
 
-The scope of this Delivery Note is usage of the Rubin Science Platform (including) associated infrastructure for observatory operations, including (but not limited to) control of the observing queue, analysis and visualisation of incoming telescope data and analsysis of telemetry and other quantities stored in the Engineering Facilities Database.
+The scope of this Delivery Note is usage of the Rubin Science Platform and its underlying service infrastructure for observatory operations, including (but not limited to) control of the observing queue, analysis and visualisation of incoming telescope data and analsysis of telemetry and other quantities stored in the Engineering Facilities Database.
 
 The usage of the RSP in this way is "off-requirements".
 The Construction project had a need for interim tooling at the summit pending delivery of other planned components, and so the RSP (in particularly the notebook service nublado) was opportunistically offered as a way to fill in that gap.
@@ -139,12 +139,12 @@ Telescope & Site Build/Release
 
 This service consumes containers built by Telescope & Site (in Operations, Observatory Operations) and SQuaRE collaborates with the Telescope & Site release co-ordinator and scientist on adding the JupyterLab layer on top of those containers for the notebook service (nublado). We occasionally meet to resolve issues across (or about) our interface, eg our recent `Build Workshop <https://confluence.lsstcorp.org/display/DM/2021-04-14+Build+Workshop>`_
 
-Telescope IT
--------------
+Observatory IT
+--------------
 
-This service consumes containers (specifically multus init containers) provided through Telescope IT for supporting multicast networking for our notebook pods.
+This service consumes containers (specifically multus init containers) provided through Observatory IT for supporting multicast networking for our notebook pods.
 
-Like all of SQuaRE's summit services, RSP at the summit and base relies completely on Kubernetes infrastructure and network supported by Telescope (Chile) IT.
+Like all of SQuaRE's summit services, RSP at the summit and base relies completely on Kubernetes infrastructure and network supported by Observatory (Chile) IT.
 
 Visual Identity
 ---------------
