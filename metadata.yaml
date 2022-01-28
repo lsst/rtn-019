@@ -18,6 +18,10 @@ doc_title: "Science Platform Use for Summit Operations: Delivery Note"
 # Author names, ordered as a list. Each author name should be formatted as 'First Last'
 authors:
   - "Frossie Economou"
+  - "Adam Thornton"
+  - "Christine Banek"
+  - "Russ Allbery"
+  - "Simon Krughoff"
 
 # Current document revision date, YYYY-MM-DD
 # Only set this field if you need to manually fix the revision date;
@@ -37,7 +41,7 @@ authors:
 copyright: "2021, Association of Universities for Research in Astronomy, Inc. (AURA)"
 
 # Description. A short, 1-2 sentence statemement used by document indices.
-description: "This is a SQuaRE delivery note covering use of the science platform for Observatory Operations (telescope deployments). "
+description: "SQuaRE delivery note covering use of the science platform for Observatory Operations (telescope deployments). "
 
 # Abstract, if available
 # abstract: >
